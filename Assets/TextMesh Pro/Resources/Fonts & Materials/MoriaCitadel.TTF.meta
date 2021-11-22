@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 1800ec18b2f5f35458ad19896f396f36
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Moria Citadel
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 436a769e475c585418bc47c50acffc2c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
