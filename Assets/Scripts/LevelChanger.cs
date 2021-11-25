@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelChanger : MonoBehaviour
 {
-    public int LevelToLoad; //set this in the editor under scripts to the level to load (level 1 is 0, level 2 is 1)
-    // Start is called before the first frame update
+    public int LevelToLoad; //set this in the editor for door in each level under scripts to the level to load
 
     void OnTriggerEnter2D(Collider2D other)
     {
