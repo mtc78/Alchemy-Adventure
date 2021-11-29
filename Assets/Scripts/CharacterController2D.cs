@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class CharacterController2D : MonoBehaviour
@@ -21,6 +22,16 @@ public class CharacterController2D : MonoBehaviour
     private BoxCollider2D boxCollider;
 
     private Vector2 velocity;
+
+    private int health = 1;
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            health -= 1;
+        }
+    }
 
     /// <summary>
     /// Set to true when the character intersects a collider beneath
@@ -45,6 +56,11 @@ public class CharacterController2D : MonoBehaviour
 
     private void Update()
     {
+        if (health == 0)
+        {
+            SceneManager.LoadScene(0);
+        }
+
 
         if (Input.GetButtonDown("Fire1"))
         {
