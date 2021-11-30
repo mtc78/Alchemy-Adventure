@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
 
+    private SpriteRenderer mySpriteRenderer;
+
     [SerializeField]
     private float speed;
 
@@ -19,6 +21,11 @@ public class EnemyMovement : MonoBehaviour
         
     }
 
+    private void Awake()
+    {
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -28,10 +35,12 @@ public class EnemyMovement : MonoBehaviour
         {
             if (index == positions.Length -1)
             {
+                mySpriteRenderer.flipX = true;
                 index = 0;
             }
             else
             {
+                mySpriteRenderer.flipX = false;
                 index++;
             }
         }

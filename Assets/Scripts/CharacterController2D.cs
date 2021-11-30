@@ -25,6 +25,8 @@ public class CharacterController2D : MonoBehaviour
 
     private int health = 1;
 
+    private SpriteRenderer mySpriteRenderer;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enemy"))
@@ -42,6 +44,7 @@ public class CharacterController2D : MonoBehaviour
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public Rigidbody2D pfPotion;
@@ -56,6 +59,25 @@ public class CharacterController2D : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            // if the variable isn't empty (we have a reference to our SpriteRenderer
+            if (mySpriteRenderer != null)
+            {
+                // flip the sprite
+                mySpriteRenderer.flipX = true;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            // if the variable isn't empty (we have a reference to our SpriteRenderer
+            if (mySpriteRenderer != null)
+            {
+                // flip the sprite
+                mySpriteRenderer.flipX = false;
+            }
+        }
+
         if (health == 0)
         {
             SceneManager.LoadScene(0);
