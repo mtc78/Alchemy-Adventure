@@ -23,17 +23,28 @@ public class CharacterController2D : MonoBehaviour
 
     private Vector2 velocity;
 
-    private int health = 1;
+    private int health = 4;
 
     private SpriteRenderer mySpriteRenderer;
 
+    private float cooldown;
+
+    private bool testcooldown = true;
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy") && testcooldown == true) //&& cooldown <= Time.time
         {
             health -= 1;
+            Debug.Log("HP in character controller:");
+            Debug.Log(health);   
+            testcooldown = false;
+            PlayerPrefs.SetInt("Health", health);
+            PlayerPrefs.Save();
+            cooldown = Time.time + 2;
+            return;
         }
     }
+
 
     /// <summary>
     /// Set to true when the character intersects a collider beneath
@@ -45,6 +56,7 @@ public class CharacterController2D : MonoBehaviour
     {
         boxCollider = GetComponent<BoxCollider2D>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
+        PlayerPrefs.SetInt("Health", health); //set hp to 4
     }
 
     public Rigidbody2D pfPotion;
@@ -59,6 +71,10 @@ public class CharacterController2D : MonoBehaviour
 
     private void Update()
     {
+        if (cooldown <= Time.time)
+        {
+            testcooldown = true;
+        }
         if (Input.GetKeyDown(KeyCode.A))
         {
             // if the variable isn't empty (we have a reference to our SpriteRenderer
