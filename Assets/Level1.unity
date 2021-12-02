@@ -1192,6 +1192,7 @@ GameObject:
   - component: {fileID: 1492630585}
   - component: {fileID: 1492630584}
   - component: {fileID: 1492630583}
+  - component: {fileID: 1492630586}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -1226,11 +1227,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d7031d14ed112468c06b4ce4171c46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 9
+  speed: 15
   walkAcceleration: 75
   airAcceleration: 30
   groundDeceleration: 70
-  jumpHeight: 4
+  jumpHeight: 8
+  animator: {fileID: 1492630586}
   pfPotion: {fileID: 3653162546814158541, guid: e099a690507b496448f358152de17c8b,
     type: 3}
   potionspeed: 100
@@ -1312,6 +1314,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1492630586
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492630581}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c81a516c5a4eb544f9d996798a362773, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1520178236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1498,6 +1519,7 @@ MonoBehaviour:
   airAcceleration: 30
   groundDeceleration: 70
   jumpHeight: 4
+  animator: {fileID: 0}
   pfPotion: {fileID: 0}
   potionspeed: 100
 --- !u!1 &1646380499

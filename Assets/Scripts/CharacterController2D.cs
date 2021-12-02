@@ -19,6 +19,8 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField, Tooltip("Max height the character will jump regardless of gravity")]
     float jumpHeight = 4;
 
+    public Animator animator;
+
     private BoxCollider2D boxCollider;
 
     private Vector2 velocity;
@@ -132,6 +134,9 @@ public class CharacterController2D : MonoBehaviour
         {
             velocity.x = Mathf.MoveTowards(velocity.x, 0, deceleration * Time.deltaTime);
         }
+
+        float animatorspeed = moveInput * speed;
+        animator.SetFloat("Speed", Mathf.Abs(animatorspeed));
 
         //Calculate velocity in term of time
         velocity.y += Physics2D.gravity.y * Time.deltaTime;
