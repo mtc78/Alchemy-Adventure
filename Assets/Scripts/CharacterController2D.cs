@@ -31,6 +31,8 @@ public class CharacterController2D : MonoBehaviour
 
     private float cooldown;
 
+    private bool isFacingRight = true;
+
     private bool testcooldown = true;
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -77,22 +79,24 @@ public class CharacterController2D : MonoBehaviour
         {
             testcooldown = true;
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) && (isFacingRight == true) && !(Input.GetKey(KeyCode.RightArrow) || (Input.GetKey(KeyCode.D))))
         {
             // if the variable isn't empty (we have a reference to our SpriteRenderer
             if (mySpriteRenderer != null)
             {
                 // flip the sprite
                 mySpriteRenderer.flipX = true;
+                isFacingRight = false;
             }
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if ((Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) && (isFacingRight == false) && !(Input.GetKey(KeyCode.LeftArrow) || (Input.GetKey(KeyCode.A))))
         {
             // if the variable isn't empty (we have a reference to our SpriteRenderer
             if (mySpriteRenderer != null)
             {
                 // flip the sprite
                 mySpriteRenderer.flipX = false;
+                isFacingRight = true;
             }
         }
 
