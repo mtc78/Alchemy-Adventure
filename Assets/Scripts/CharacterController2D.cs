@@ -66,7 +66,7 @@ public class CharacterController2D : MonoBehaviour
         }   
     }
 
-    public Rigidbody2D pfPotion;
+    /*public Rigidbody2D pfPotion;
     public float potionspeed = 100;
 
     public void Fire()
@@ -74,7 +74,7 @@ public class CharacterController2D : MonoBehaviour
         Rigidbody2D potion = Instantiate(pfPotion, transform.position, transform.rotation); //spawn potion
         //Rigidbody2D potion = Instantiate(pfPotion, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
         potion.GetComponent<Rigidbody2D>().AddForce(transform.right * potionspeed); //this does not appear to be doing anything
-    }
+    }*/
 
     private void Update()
     {
@@ -92,7 +92,7 @@ public class CharacterController2D : MonoBehaviour
                 isFacingRight = false;
 
                 Transform child = transform.Find("PotionSpawn");
-                child.transform.localPosition = new Vector3(-1.5f, 1, 0);
+                child.transform.localPosition = new Vector3(-1.5f, 2.2f, 0);
                 child.Rotate(new Vector3(0, 180, 0));
             }
         }
@@ -106,7 +106,7 @@ public class CharacterController2D : MonoBehaviour
                 isFacingRight = true;
 
                 Transform child = transform.Find("PotionSpawn");
-                child.transform.localPosition = new Vector3(1.5f, 1, 0);
+                child.transform.localPosition = new Vector3(1.5f, 2.2f, 0);
                 child.Rotate(new Vector3(0, 180, 0));
             }
         }
@@ -117,10 +117,10 @@ public class CharacterController2D : MonoBehaviour
         }
 
 
-        if (Input.GetButtonDown("Fire1"))
+        /*if (Input.GetButtonDown("Fire1"))
         {
             Fire();
-        }
+        }*/
 
         // Use GetAxisRaw to ensure our input is either 0, 1 or -1.
         float moveInput = Input.GetAxisRaw("Horizontal");
@@ -166,7 +166,7 @@ public class CharacterController2D : MonoBehaviour
         foreach (Collider2D hit in hits)
         {
             // Ignore our own collider.
-            if (hit == boxCollider)
+            if (hit == boxCollider || hit.gameObject.name == "Potion" || hit.gameObject.name == "Potion(Clone)")
                 continue;
 
             ColliderDistance2D colliderDistance = hit.Distance(boxCollider);
