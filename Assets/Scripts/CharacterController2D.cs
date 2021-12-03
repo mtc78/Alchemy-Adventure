@@ -38,7 +38,7 @@ public class CharacterController2D : MonoBehaviour
     {
         if (other.CompareTag("Enemy") && testcooldown == true) //&& cooldown <= Time.time
         {
-            health -= 1;
+            health = (PlayerPrefs.GetInt("Health") - 1);
             Debug.Log("HP in character controller:");
             Debug.Log(health);   
             testcooldown = false;
@@ -60,7 +60,10 @@ public class CharacterController2D : MonoBehaviour
     {
         boxCollider = GetComponent<BoxCollider2D>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
-        PlayerPrefs.SetInt("Health", health); //set hp to 4
+        if (SceneManager.GetActiveScene().name == "Level1")
+        {
+            PlayerPrefs.SetInt("Health", health); //set hp to 4
+        }   
     }
 
     public Rigidbody2D pfPotion;
