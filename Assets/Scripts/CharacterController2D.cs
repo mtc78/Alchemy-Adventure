@@ -90,6 +90,10 @@ public class CharacterController2D : MonoBehaviour
                 // flip the sprite
                 mySpriteRenderer.flipX = true;
                 isFacingRight = false;
+
+                Transform child = transform.Find("PotionSpawn");
+                child.transform.localPosition = new Vector3(-1.5f, 1, 0);
+                child.Rotate(new Vector3(0, 180, 0));
             }
         }
         if ((Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) && (isFacingRight == false) && !(Input.GetKey(KeyCode.LeftArrow) || (Input.GetKey(KeyCode.A))))
@@ -100,6 +104,10 @@ public class CharacterController2D : MonoBehaviour
                 // flip the sprite
                 mySpriteRenderer.flipX = false;
                 isFacingRight = true;
+
+                Transform child = transform.Find("PotionSpawn");
+                child.transform.localPosition = new Vector3(1.5f, 1, 0);
+                child.Rotate(new Vector3(0, 180, 0));
             }
         }
 
