@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 3.unity
     guid: 12d8bd57c96bc504ba610f45046997de
+  - enabled: 1
+    path: Assets/Scenes/OpeningCutscene.unity
+    guid: b39d1c1bf3bab6f48a7f464c28b05543
   m_configObjects: {}
