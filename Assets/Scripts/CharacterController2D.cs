@@ -36,7 +36,7 @@ public class CharacterController2D : MonoBehaviour
     private bool testcooldown = true;
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy") && testcooldown == true) //&& cooldown <= Time.time
+        if (other.CompareTag("Enemy") && testcooldown == true)
         {
             health = (PlayerPrefs.GetInt("Health") - 1);
             Debug.Log("HP in character controller:");

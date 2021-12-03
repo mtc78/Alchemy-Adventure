@@ -21,6 +21,14 @@ public class EnemyMovement : MonoBehaviour
         
     }
 
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Potion"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void Awake()
     {
         mySpriteRenderer = GetComponent<SpriteRenderer>();

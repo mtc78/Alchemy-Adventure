@@ -15,9 +15,6 @@ public class HPBar : MonoBehaviour
     {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         int hp = PlayerPrefs.GetInt("Health");
-        Debug.Log(PlayerPrefs.GetInt("Health"));
-        Debug.Log("HP:");
-        Debug.Log(hp);
     }
 
     // Update is called once per frame
@@ -40,8 +37,5 @@ public class HPBar : MonoBehaviour
             mySpriteRenderer.sprite = hp4;
         }
         int hp = PlayerPrefs.GetInt("Health");
-        Debug.Log(PlayerPrefs.GetInt("Health"));
-        Debug.Log("HP:");
-        Debug.Log(hp);
     }
 }
