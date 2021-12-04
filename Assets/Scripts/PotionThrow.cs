@@ -8,19 +8,28 @@ public class PotionThrow : MonoBehaviour
     public GameObject potion;
     private bool testcooldown = true;
     private float cooldown;
+    private float animationcooldown;
+
+    public Animator animator;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Fire1") && testcooldown == true)
         {
+            animator.SetBool("IsThrowing", true);
             ThrowPotion();
             testcooldown = false;
             cooldown = Time.time + 1;
+            animationcooldown = Time.time + 0.3f;
         }
         if (cooldown <= Time.time)
         {
             testcooldown = true;
+        }
+        if (animationcooldown <= Time.time)
+        {
+            animator.SetBool("IsThrowing", false);
         }
     }
 

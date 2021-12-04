@@ -1513,6 +1513,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1364961981}
   m_CullTransparentMesh: 1
+--- !u!1 &1484125543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6034390281171518995, guid: 88b39dff2f03db44f84df4c5b425e775,
+    type: 3}
+  m_PrefabInstance: {fileID: 6034390281849928230}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1484125544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484125543}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba8ec17262c08fd49bd0b38f75886680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 1606214051}
+  potion: {fileID: 9111602324243363006, guid: ba2b40a0ae8743248a375a4a5b7d4766, type: 3}
 --- !u!1 &1520178236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1723,7 +1743,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606214050}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4999999, y: 1, z: 0}
+  m_LocalPosition: {x: 2, y: 2.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6034390281849928231}
