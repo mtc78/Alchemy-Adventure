@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class PotionThrow : MonoBehaviour
 {
@@ -11,11 +12,12 @@ public class PotionThrow : MonoBehaviour
     private float animationcooldown;
 
     public Animator animator;
+    public PlayableDirector playableDirector;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && testcooldown == true)
+        if (Input.GetButtonDown("Fire1") && testcooldown == true && playableDirector.state != PlayState.Playing)
         {
             animator.SetBool("IsThrowing", true);
             ThrowPotion();

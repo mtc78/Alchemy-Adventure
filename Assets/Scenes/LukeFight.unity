@@ -404,6 +404,7 @@ MonoBehaviour:
   firePoint: {fileID: 2138102967}
   potion: {fileID: 9111602324243363006, guid: ba2b40a0ae8743248a375a4a5b7d4766, type: 3}
   animator: {fileID: 267538970}
+  playableDirector: {fileID: 1987745577}
 --- !u!4 &267538975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6034390281171518992, guid: 88b39dff2f03db44f84df4c5b425e775,
@@ -658,7 +659,7 @@ PrefabInstance:
     - target: {fileID: 6034390281171519006, guid: 88b39dff2f03db44f84df4c5b425e775,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6034390281171519007, guid: 88b39dff2f03db44f84df4c5b425e775,
         type: 3}
