@@ -48,7 +48,7 @@ public class PotionMovement : MonoBehaviour
         {
             Debug.Log("cooldown Activated");
             Destroy(spriteRenderer);
-            Debug.Log("Hit collider");
+            Debug.Log("luke potion Hit collider");
             source.Play(); 
         }
     }

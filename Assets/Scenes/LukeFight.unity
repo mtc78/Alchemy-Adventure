@@ -1032,6 +1032,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6034390281171519006, guid: 88b39dff2f03db44f84df4c5b425e775,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6034390281171519007, guid: 88b39dff2f03db44f84df4c5b425e775,
         type: 3}
       propertyPath: m_FlipX
@@ -1101,6 +1106,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034390281197595606, guid: 88b39dff2f03db44f84df4c5b425e775,
+        type: 3}
+      propertyPath: animator
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6034390281197595606, guid: 88b39dff2f03db44f84df4c5b425e775,
         type: 3}
@@ -1674,7 +1684,7 @@ GameObject:
   - component: {fileID: 1410950973}
   m_Layer: 6
   m_Name: PotionSpawn (1)
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

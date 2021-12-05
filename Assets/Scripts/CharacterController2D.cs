@@ -49,6 +49,21 @@ public class CharacterController2D : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(PolygonCollider2D other)
+    {
+        if (other.CompareTag("Enemy") && testcooldown == true)
+        {
+            health = (PlayerPrefs.GetInt("Health") - 1);
+            Debug.Log("HP in character controller:");
+            Debug.Log(health);
+            testcooldown = false;
+            PlayerPrefs.SetInt("Health", health);
+            PlayerPrefs.Save();
+            cooldown = Time.time + 1;
+            return;
+        }
+    }
+
 
     /// <summary>
     /// Set to true when the character intersects a collider beneath
