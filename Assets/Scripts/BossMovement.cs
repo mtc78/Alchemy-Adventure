@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class BossMovement : MonoBehaviour
@@ -17,6 +19,9 @@ public class BossMovement : MonoBehaviour
 
     public int health;
 
+    public Text textbox;
+    public Image image;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +35,13 @@ public class BossMovement : MonoBehaviour
             health -= 1;
             if (health == 0)
             {
+                Destroy(gameObject);
+            }
+            if (health == 0 && SceneManager.GetActiveScene().name == "Level3Real")
+            {
+                Debug.Log("Reached textbox enable");
+                textbox.enabled = true;
+                image.enabled = true;
                 Destroy(gameObject);
             }
         }
