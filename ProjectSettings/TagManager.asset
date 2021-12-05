@@ -52,6 +52,9 @@ TagManager:
   - name: Parallax 2
     uniqueID: 3136575619
     locked: 0
+  - name: Cave Entrance
+    uniqueID: 3050288801
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
