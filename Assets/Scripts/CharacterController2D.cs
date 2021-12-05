@@ -75,7 +75,7 @@ public class CharacterController2D : MonoBehaviour
     {
         boxCollider = GetComponent<BoxCollider2D>();
         mySpriteRenderer = GetComponent<SpriteRenderer>();
-        if (SceneManager.GetActiveScene().name == "OpeningCutscene")
+        if (SceneManager.GetActiveScene().name == "OpeningCutscene" || SceneManager.GetActiveScene().name == "Level1")
         {
             PlayerPrefs.SetInt("Health", health); //set hp to 4
         }   
