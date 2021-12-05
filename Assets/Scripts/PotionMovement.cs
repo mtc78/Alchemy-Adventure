@@ -28,7 +28,6 @@ public class PotionMovement : MonoBehaviour
     {
         if (Time.timeSinceLevelLoad - potionTime > 3)
         {
-            Debug.Log("Expired");
             Destroy(spriteRenderer);
             Destroy(gameObject);
         }
@@ -46,7 +45,7 @@ public class PotionMovement : MonoBehaviour
     void OnTriggerEnter2D(Collider2D hitInfo){
         if (!source.isPlaying)
         {
-            Debug.Log("cooldown Activated");
+            Debug.Log(hitInfo);
             Destroy(spriteRenderer);
             Debug.Log("luke potion Hit collider");
             source.Play();

@@ -15,16 +15,18 @@ public class Breakables : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Potion") && PlayerPrefs.GetInt("Health") < 4)
+        if (other.CompareTag("Potion"))
         {
             source.Play();
+            Destroy(gameObject, 0.4f);
         }
         if (other.CompareTag("Potion") && PlayerPrefs.GetInt("Health") < 4)
         {
             health = (PlayerPrefs.GetInt("Health") + 1);
             PlayerPrefs.SetInt("Health", health);
             PlayerPrefs.Save();
-            Destroy(gameObject, 0.4f);
+            source.Play();
+            Destroy(gameObject, 0.2f);
         }
     }
 

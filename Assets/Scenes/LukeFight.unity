@@ -658,6 +658,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6034390281171519006, guid: 88b39dff2f03db44f84df4c5b425e775,
         type: 3}
+      propertyPath: m_Size.x
+      value: 4.8507123
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034390281171519006, guid: 88b39dff2f03db44f84df4c5b425e775,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.09596276
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034390281171519006, guid: 88b39dff2f03db44f84df4c5b425e775,
+        type: 3}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -1410,7 +1420,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1800ec18b2f5f35458ad19896f396f36, type: 3}
-    m_FontSize: 38
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1421,7 +1431,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Step aside! or I'll make you
+  m_Text: Step aside or I'll make you!
 --- !u!222 &1891086880
 CanvasRenderer:
   m_ObjectHideFlags: 0
