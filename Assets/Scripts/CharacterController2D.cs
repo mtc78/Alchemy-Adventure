@@ -44,7 +44,7 @@ public class CharacterController2D : MonoBehaviour
             testcooldown = false;
             PlayerPrefs.SetInt("Health", health);
             PlayerPrefs.Save();
-            cooldown = Time.time + 2;
+            cooldown = Time.time + 1;
             return;
         }
     }

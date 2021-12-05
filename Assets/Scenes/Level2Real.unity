@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4218615138bd8794a85a0f72142d9894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelToLoad: 3
+  LevelToLoad: 4
 --- !u!50 &294824477
 Rigidbody2D:
   serializedVersion: 4
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e90e8fda38bdeb48a2ff5ab7c38aaf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffect: {x: 0.9, y: 0.3}
+  parallaxEffect: {x: 0.7, y: 0.3}
 --- !u!1001 &321659184
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -597,7 +597,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491546621}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.600001, y: 19.3, z: 10}
+  m_LocalPosition: {x: 5, y: 23.2, z: 10}
   m_LocalScale: {x: 3.5, y: 3.4999998, z: 4}
   m_Children: []
   m_Father: {fileID: 915191402}
@@ -641,8 +641,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1721234521
-  m_SortingLayer: -3
+  m_SortingLayerID: -2005911625
+  m_SortingLayer: -4
   m_SortingOrder: 100
   m_Sprite: {fileID: 21300000, guid: 684ccbdac00f8384a8fc2de849fa2162, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -667,7 +667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e90e8fda38bdeb48a2ff5ab7c38aaf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffect: {x: 0, y: 0}
+  parallaxEffect: {x: 0.9, y: 0.3}
 --- !u!1 &550363649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,7 +1209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520178236}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.529, y: -7, z: -6.787707}
+  m_LocalPosition: {x: 0.529, y: -3.5, z: -6.787707}
   m_LocalScale: {x: 200, y: 0.01, z: 1}
   m_Children: []
   m_Father: {fileID: 622990856}
@@ -1417,8 +1417,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646380499}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.5, y: 38, z: 10}
-  m_LocalScale: {x: 5, y: 5, z: 4}
+  m_LocalPosition: {x: 2.2, y: 6.1, z: 10}
+  m_LocalScale: {x: 3, y: 3, z: 4}
   m_Children: []
   m_Father: {fileID: 915191402}
   m_RootOrder: 1
@@ -1469,7 +1469,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 1000, y: 28.638655}
+  m_Size: {x: 1000, y: 20}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1938,7 +1938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e90e8fda38bdeb48a2ff5ab7c38aaf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffect: {x: 0.5, y: 0}
+  parallaxEffect: {x: 0.5, y: 0.2}
 --- !u!1001 &2093806859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2163,12 +2163,12 @@ PrefabInstance:
     - target: {fileID: 6034390281171518992, guid: 88b39dff2f03db44f84df4c5b425e775,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -41.62
+      value: -41.43
       objectReference: {fileID: 0}
     - target: {fileID: 6034390281171518992, guid: 88b39dff2f03db44f84df4c5b425e775,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.09
+      value: -2.15
       objectReference: {fileID: 0}
     - target: {fileID: 6034390281171518992, guid: 88b39dff2f03db44f84df4c5b425e775,
         type: 3}
