@@ -400,6 +400,7 @@ MonoBehaviour:
   firePoint: {fileID: 1606214051}
   potion: {fileID: 9111602324243363006, guid: ba2b40a0ae8743248a375a4a5b7d4766, type: 3}
   animator: {fileID: 146353504}
+  playableDirector: {fileID: 710968796}
 --- !u!95 &146353504 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6034390281171519004, guid: 88b39dff2f03db44f84df4c5b425e775,
