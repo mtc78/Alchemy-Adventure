@@ -32,14 +32,14 @@ public class PotionMovement : MonoBehaviour
             Destroy(spriteRenderer);
             Destroy(gameObject);
         }
-        if (cooldown <= Time.time)
+        //if (cooldown <= Time.time)
         {
-            Debug.Log("cooldown ended");
-            testcooldown = true;
+            //Debug.Log("cooldown ended");
+            //testcooldown = true;
         }
-        if (testcooldown == true)
+        //if (testcooldown == true)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 
@@ -49,7 +49,8 @@ public class PotionMovement : MonoBehaviour
             Debug.Log("cooldown Activated");
             Destroy(spriteRenderer);
             Debug.Log("luke potion Hit collider");
-            source.Play(); 
+            source.Play();
+            Destroy(gameObject, 0.5f);
         }
     }
 
