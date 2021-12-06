@@ -10,18 +10,24 @@ public class PotionMovement : MonoBehaviour
     public float potionTime;
     private float cooldown;
 
+    //public GameObject audioplayer;
+
     AudioSource source;
     SpriteRenderer spriteRenderer;
+    PolygonCollider2D potioncollider;
 
     private bool testcooldown = false;
     // Start is called before the first frame update
     void Start()
     {
+        //audioplayer = GameObject.Find("potionaudio");
+        //audioplayer.SetActive(false);
         potionTime = Time.timeSinceLevelLoad;
         rb.velocity = new Vector2(transform.right.x * speedRight, transform.up.y * speedUp);
         source = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        cooldown = (Time.time + 3);
+        potioncollider = GetComponent<PolygonCollider2D>();
+        cooldown = (Time.time + 1);
     }
 
     void Update()
@@ -31,25 +37,22 @@ public class PotionMovement : MonoBehaviour
             Destroy(spriteRenderer);
             Destroy(gameObject);
         }
-        //if (cooldown <= Time.time)
+        if (cooldown <= Time.time)
         {
-            //Debug.Log("cooldown ended");
-            //testcooldown = true;
-        }
-        //if (testcooldown == true)
-        {
-            //Destroy(gameObject);
+            //audioplayer.SetActive(false);
         }
     }
 
     void OnTriggerEnter2D(Collider2D hitInfo){
         if (!source.isPlaying)
         {
+            //cooldown = (Time.time + 3);
+            //audioplayer.SetActive(true);
             Debug.Log(hitInfo);
             Destroy(spriteRenderer);
-            Debug.Log("luke potion Hit collider");
             source.Play();
-            Destroy(gameObject, 0.5f);
+            Destroy(potioncollider);
+            Destroy(gameObject, 0.7f);
         }
     }
 

@@ -12,6 +12,7 @@ public class PotionThrow : MonoBehaviour
     private float animationcooldown;
 
     public Animator animator;
+    public Animator cooldownanimator;
     public PlayableDirector playableDirector;
 
     // Update is called once per frame
@@ -24,10 +25,12 @@ public class PotionThrow : MonoBehaviour
             testcooldown = false;
             cooldown = Time.time + 1;
             animationcooldown = Time.time + 0.2f;
+            cooldownanimator.SetBool("Fill", true);
         }
         if (cooldown <= Time.time)
         {
             testcooldown = true;
+            cooldownanimator.SetBool("Fill", false);
         }
         if (animationcooldown <= Time.time)
         {

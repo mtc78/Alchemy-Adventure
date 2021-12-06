@@ -93,6 +93,8 @@ public class CharacterController2D : MonoBehaviour
 
     private void Update()
     {
+
+
         if (cooldown <= Time.time)
         {
             testcooldown = true;
@@ -186,7 +188,7 @@ public class CharacterController2D : MonoBehaviour
         foreach (Collider2D hit in hits)
         {
             // Ignore our own collider.
-            if (hit == boxCollider || hit.gameObject.name == "Potion" || hit.gameObject.name == "Potion(Clone)")
+            if (hit == boxCollider || hit.gameObject.name == "Potion" || hit.gameObject.name == "Potion(Clone)" || hit.gameObject.name == "PotionWall")
                 continue;
 
             ColliderDistance2D colliderDistance = hit.Distance(boxCollider);
