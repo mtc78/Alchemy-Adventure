@@ -23,7 +23,7 @@ public class PotionThrow : MonoBehaviour
             ThrowPotion();
             testcooldown = false;
             cooldown = Time.time + 1;
-            animationcooldown = Time.time + 0.3f;
+            animationcooldown = Time.time + 0.2f;
         }
         if (cooldown <= Time.time)
         {
