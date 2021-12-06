@@ -1030,7 +1030,7 @@ MonoBehaviour:
   textbox: {fileID: 51688128}
   image: {fileID: 8492694}
   arena1: {fileID: 1553098209}
-  arena2: {fileID: 1683903695}
+  arena2: {fileID: 0}
 --- !u!95 &1272157055
 Animator:
   serializedVersion: 3
