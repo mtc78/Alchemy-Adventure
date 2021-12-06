@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LukeFight.unity
     guid: 7cf4bcb4e15756a4da0838817593468e
+  - enabled: 1
+    path: Assets/Scenes/DeathScreen.unity
+    guid: fb9bcfb5a160a6a4587c143e868ea5cb
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 88c1a8efb1f6eee468bedb17418cd08b
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

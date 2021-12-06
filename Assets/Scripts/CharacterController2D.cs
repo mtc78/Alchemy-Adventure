@@ -128,7 +128,7 @@ public class CharacterController2D : MonoBehaviour
 
         if (health == 0)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(6);
         }
 
 
