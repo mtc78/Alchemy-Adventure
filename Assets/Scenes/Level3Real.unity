@@ -1109,7 +1109,7 @@ MonoBehaviour:
   positions:
   - {x: -85, y: -2.45, z: 0}
   - {x: 12, y: -2.45, z: 0}
-  health: 5
+  health: 7
   textbox: {fileID: 51688128}
   image: {fileID: 8492694}
   arena1: {fileID: 1553098209}
@@ -2043,7 +2043,7 @@ PrefabInstance:
     - target: {fileID: 2186499966233315181, guid: 88b39dff2f03db44f84df4c5b425e775,
         type: 3}
       propertyPath: m_Volume
-      value: 0.513
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2186499966233315181, guid: 88b39dff2f03db44f84df4c5b425e775,
         type: 3}
