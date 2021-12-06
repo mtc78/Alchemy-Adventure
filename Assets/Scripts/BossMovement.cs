@@ -25,6 +25,8 @@ public class BossMovement : MonoBehaviour
     public GameObject arena1;
     public GameObject arena2;
 
+    public GameObject ingredient;
+
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +41,7 @@ public class BossMovement : MonoBehaviour
             health -= 1;
             if (health == 0)
             {
+                ingredient.SetActive(true);
                 Destroy(gameObject);
                 Destroy(arena1);
                 Destroy(arena2);
