@@ -489,7 +489,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1721234521
-  m_SortingLayer: -4
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 77c363e65c206c648b2eceee91d1ac02, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -702,7 +702,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1158391677
-  m_SortingLayer: -2
+  m_SortingLayer: -1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 2d24bd278d19c394281be90f517588a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1267,7 +1267,6 @@ MonoBehaviour:
   firePoint: {fileID: 1606214051}
   potion: {fileID: 9111602324243363006, guid: ba2b40a0ae8743248a375a4a5b7d4766, type: 3}
   animator: {fileID: 0}
-  playableDirector: {fileID: 0}
 --- !u!1 &1520178236
 GameObject:
   m_ObjectHideFlags: 0
@@ -1555,7 +1554,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1158391677
-  m_SortingLayer: -2
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ee61515eee35be544afd5537627ed493, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1737,7 +1736,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1799826617
-  m_SortingLayer: -3
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d629042f49d64ed4e8f88f66ba6da895, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1775,12 +1774,6 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.494
       objectReference: {fileID: 0}
-    - target: {fileID: 2186499966233315181, guid: 88b39dff2f03db44f84df4c5b425e775,
-        type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: 7eb65074d47341b4a9578a1e03c5ba74,
-        type: 2}
     - target: {fileID: 6034390281171518992, guid: 88b39dff2f03db44f84df4c5b425e775,
         type: 3}
       propertyPath: m_LocalPosition.x

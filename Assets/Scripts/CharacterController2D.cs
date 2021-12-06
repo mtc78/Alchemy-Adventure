@@ -126,9 +126,14 @@ public class CharacterController2D : MonoBehaviour
             }
         }
 
+        if ((Input.GetKey(KeyCode.P) && SceneManager.GetActiveScene().name == "OpeningCutscene"))
+        {
+            SceneManager.LoadScene(2);
+        }
+
         if (health == 0)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(6);
         }
 
 

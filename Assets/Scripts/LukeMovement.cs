@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class LukeMovement : MonoBehaviour
@@ -32,6 +33,7 @@ public class LukeMovement : MonoBehaviour
             health -= 1;
             if (health == 0)
             {
+                SceneManager.LoadScene(7);
                 Destroy(gameObject);
             }
         }

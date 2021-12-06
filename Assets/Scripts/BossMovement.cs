@@ -22,6 +22,12 @@ public class BossMovement : MonoBehaviour
     public Text textbox;
     public Image image;
 
+    public GameObject arena1;
+    public GameObject arena2;
+
+    public GameObject ingredient;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +41,10 @@ public class BossMovement : MonoBehaviour
             health -= 1;
             if (health == 0)
             {
+                ingredient.SetActive(true);
                 Destroy(gameObject);
+                Destroy(arena1);
+                Destroy(arena2);
             }
             if (health == 0 && SceneManager.GetActiveScene().name == "Level3Real")
             {
@@ -43,6 +52,10 @@ public class BossMovement : MonoBehaviour
                 textbox.enabled = true;
                 image.enabled = true;
                 Destroy(gameObject);
+            }
+            if (health == 0 && SceneManager.GetActiveScene().name == "Level")
+            {
+                Debug.Log("arena destroyer"); 
             }
         }
     }
