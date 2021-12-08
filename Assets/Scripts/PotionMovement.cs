@@ -16,7 +16,6 @@ public class PotionMovement : MonoBehaviour
     SpriteRenderer spriteRenderer;
     PolygonCollider2D potioncollider;
 
-    private bool testcooldown = false;
     // Start is called before the first frame update
     void Start()
     {
