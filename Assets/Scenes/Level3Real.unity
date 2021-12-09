@@ -741,7 +741,7 @@ GameObject:
   - component: {fileID: 435979374}
   - component: {fileID: 435979376}
   - component: {fileID: 435979375}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Potion1_transparent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -819,8 +819,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 667802797
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 902f0dd29f4f619419d77dc3702a6566, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1042,7 +1042,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1088677795}
   - component: {fileID: 1088677796}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1101,8 +1101,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 667802797
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e5aab203c11ffba4f89597267a1590a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1298,7 +1298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272157053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.84, y: -2.61, z: 0}
+  m_LocalPosition: {x: -23.87, y: -2.88, z: 0}
   m_LocalScale: {x: 0.59, y: 0.59, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1361,7 +1361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1416125149}
   - component: {fileID: 1416125150}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1420,8 +1420,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 667802797
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 797c40ada72580c4aa1f5c87c64ece58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1967,7 +1967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1800162922}
   - component: {fileID: 1800162923}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: slime animation2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2026,8 +2026,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 667802797
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c1f12d2c51ab1714eb8e0b65f332e1d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
