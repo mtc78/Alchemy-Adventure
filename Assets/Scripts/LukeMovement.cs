@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LukeMovement : MonoBehaviour
 {
@@ -20,10 +21,23 @@ public class LukeMovement : MonoBehaviour
 
     private BoxCollider2D boxCollider;
 
+    public Animator animator;
+
+    private bool dead = false;
+
+    BoxCollider2D lukecollider;
+
+    public Text textbox;
+    public Image image;
+
+
+    public GameObject arena1;
+    public GameObject arena2;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        lukecollider = GetComponent<BoxCollider2D>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -33,8 +47,15 @@ public class LukeMovement : MonoBehaviour
             health -= 1;
             if (health == 0)
             {
-                SceneManager.LoadScene(7);
-                Destroy(gameObject);
+                Destroy(lukecollider);
+                animator.SetBool("IsDead", true);
+                dead = true;
+                textbox.enabled = true;
+                image.enabled = true;
+                Destroy(arena1);
+                Destroy(arena2);
+                Destroy(textbox, 4);
+                Destroy(image, 4);
             }
         }
     }
@@ -47,9 +68,13 @@ public class LukeMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, positions[index], Time.deltaTime * speed);
-
-        if (transform.position == positions[index])
+        if (dead == false)
+        {
+            Debug.Log(dead);
+            transform.position = Vector2.MoveTowards(transform.position, positions[index], Time.deltaTime * speed);
+        }
+       
+        if (transform.position == positions[index] && dead == false)
         {
             if (index == positions.Length - 1)
             {

@@ -22,7 +22,7 @@ public class LukePotionThrow : MonoBehaviour
         {
             ready = true;
         }
-        if (testcooldown == true && ready == true)
+        if (testcooldown == true && ready == true && animator.GetBool("IsDead") == false)
         {
             animator.SetBool("IsThrowing", true);
             ThrowPotion();

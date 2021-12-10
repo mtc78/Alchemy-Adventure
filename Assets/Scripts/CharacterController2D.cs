@@ -47,6 +47,11 @@ public class CharacterController2D : MonoBehaviour
             cooldown = Time.time + 1;
             return;
         }
+        if (other.CompareTag("End"))
+        {
+            Debug.Log("Hit end box");
+            SceneManager.LoadScene(7);
+        }
     }
 
     void OnTriggerEnter2D(PolygonCollider2D other)
